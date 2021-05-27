@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>django on Douglas Cueva Jr</title>
+    <link>https://itisDouglas.github.io/tags/django/</link>
+    <description>Recent content in django on Douglas Cueva Jr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://itisDouglas.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting out with Django</title>
+      <link>https://itisDouglas.github.io/post/third_post/</link>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://itisDouglas.github.io/post/third_post/</guid>
+      <description>What is Django? So you want to make the next Spotify or Instagram?</description>
+    </item>
+    
+  </channel>
+</rss>
