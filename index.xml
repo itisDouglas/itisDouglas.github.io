@@ -6,7 +6,16 @@
     <description>Recent content on Douglas Cueva Jr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://itisDouglas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://itisDouglas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting out with Vim</title>
+      <link>https://itisDouglas.github.io/post/starting-out-with-vim/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://itisDouglas.github.io/post/starting-out-with-vim/</guid>
+      <description>Vim Probably one of the most notorious text editors is Vim.</description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://itisDouglas.github.io/about/</link>
@@ -17,39 +26,12 @@
     </item>
     
     <item>
-      <title>Another Blog Post</title>
-      <link>https://itisDouglas.github.io/post/another_post/</link>
-      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://itisDouglas.github.io/post/another_post/</guid>
-      <description>Alright, this is another blog post. I&amp;rsquo;m currently at work, in a meeting, listening to updates on our business prospects.</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://itisDouglas.github.io/contact/</link>
       <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://itisDouglas.github.io/contact/</guid>
       <description>Get in contact!</description>
-    </item>
-    
-    <item>
-      <title>Sample Post</title>
-      <link>https://itisDouglas.github.io/post/sample-post/</link>
-      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://itisDouglas.github.io/post/sample-post/</guid>
-      <description>This is a sample blog post that will be posted on this blog as a blog post.</description>
-    </item>
-    
-    <item>
-      <title>Starting out with Django</title>
-      <link>https://itisDouglas.github.io/post/third_post/</link>
-      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://itisDouglas.github.io/post/third_post/</guid>
-      <description>What is Django? So you want to make the next Spotify or Instagram?</description>
     </item>
     
   </channel>
