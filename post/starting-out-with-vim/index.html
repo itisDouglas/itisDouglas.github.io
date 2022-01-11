@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.83.1" />
+
+  <title>Starting out with Vim &middot; Douglas Cueva Jr</title>
+
+  <meta name="description" content="Beginning Vim without fear." />
+
+  
+
+<meta itemprop="name" content="Starting out with Vim">
+<meta itemprop="description" content="Beginning Vim without fear."><meta itemprop="datePublished" content="2021-05-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-05-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1069">
+<meta itemprop="keywords" content="Vim,beginner,code,command line,terminal,text editor," />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Starting out with Vim"/>
+<meta name="twitter:description" content="Beginning Vim without fear."/>
+
+
+<meta property="og:title" content="Starting out with Vim" />
+<meta property="og:description" content="Beginning Vim without fear." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://itisDouglas.github.io/post/starting-out-with-vim/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-05-28T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-05-28T00:00:00&#43;00:00" />
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "https://itisDouglas.github.io/#author",
+      "name": "Douglas Cueva Jr",
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "https://itisDouglas.github.io/images/profile.png"
+        
+      },
+      "description": "My Personal Tech Blog"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://itisDouglas.github.io/#website",
+      "url": "https://itisDouglas.github.io/",
+      "name": "Douglas Cueva Jr",
+      "description": "My Personal Tech Blog",
+      "publisher": {
+        "@id": "https://itisDouglas.github.io/#author"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://itisDouglas.github.io/post/starting-out-with-vim/#webpage",
+      "url": "https://itisDouglas.github.io/post/starting-out-with-vim/",
+      "name": "Starting out with Vim",
+      "isPartOf": {
+        "@id": "https://itisDouglas.github.io/#website"
+      },
+      "about": {
+         "@id": "https://itisDouglas.github.io/#author"
+      },
+      "datePublished": "2021-05-28T00:00:00+00:00",
+      "dateModified": "2021-05-28T00:00:00+00:00",
+      "description": "Beginning Vim without fear.",
+      "inLanguage": "en",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://itisDouglas.github.io/post/starting-out-with-vim/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "https://itisDouglas.github.io/post/starting-out-with-vim/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "https://itisDouglas.github.io/post/starting-out-with-vim/#webpage"
+      },
+      "headline": "Starting out with Vim",
+      "datePublished": "2021-05-28T00:00:00+00:00",
+      "dateModified": "2021-05-28T00:00:00+00:00",
+      "publisher": {
+        "@id": "https://itisDouglas.github.io/#author"
+      },
+      "keywords": [
+        "Vim",
+        "beginner",
+        "code",
+        "terminal"
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name": "Douglas Cueva Jr"
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "https://itisDouglas.github.io/post/starting-out-with-vim/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  <link type="text/css" rel="stylesheet" href="/css/blog.css">
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="https://itisDouglas.github.io/">
+            <img src="/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1>Douglas Cueva Jr</h1>
+
+      
+      <p class="lead">My Personal Tech Blog</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://itisDouglas.github.io/">Home</a>
+        </li>
+        <li>
+          <a href="/contact/">Contact</a>
+        </li><li>
+          <a href="/post/">Posts</a>
+        </li><li>
+          <a href="/categories/">Categories</a>
+        </li><li>
+          <a href="/tags/">Tags</a>
+        </li><li>
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/douglas-cueva/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/itisDouglas" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://twitter.com/itisDouglas" rel="me" title="Twitter" target="_blank">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Starting out with Vim</h1>
+  
+
+  <div class="post-date">
+    <time datetime="2021-05-28T00:00:00Z">May 28, 2021</time> <span class="readtime">&middot; 6 min read</span>
+  </div>
+
+  <div>
+  <h1 id="vim">Vim</h1>
+<p>Probably one of the most notorious text editors is <a href="https://www.vim.org">Vim</a>. As someone that&rsquo;s used to text editors like VS Code, Vim presents the opportunity to feel like a ninja when editing code.</p>
+<p>If you&rsquo;re not familiar with Vim, the text editor, but have heard about it, then this is the post for you.</p>
+<p>Over the past week, I&rsquo;ve taken a LinkedIn course about Vim and have begun using it in my projects and have found it to be enjoyable, so, I&rsquo;d like to share what I&rsquo;ve learned.</p>
+<p>This tutorial will get you started slowly, so as not to scare you away from this text editor.</p>
+<p>There is a lot to learn, and a lot of Vim is memorizing commands so you can do what you want, but I believe that easing into things and finding a real-world use to apply what you&rsquo;ve learned is most helpful.</p>
+<p>So, by the end of this post you will have:</p>
+<ol>
+<li>Edited and saved a text file using Vim.</li>
+<li>Quit Vim</li>
+</ol>
+<h3 id="vims-philosophy">Vim&rsquo;s Philosophy</h3>
+<p>I would sum up Vim&rsquo;s philosophy like this: the text editor at your fingertips.</p>
+<h3 id="assumptions">Assumptions</h3>
+<p>This tutorial assumes you have some proficiency with the command line, shell, or terminal.</p>
+<p>I also assume you&rsquo;ve downloaded and installed Vim. <a href="https://www.vim.org/download.php">Check out Vim&rsquo;s website for how to install it on your operating system.</a></p>
+<p>For this tutorial, I&rsquo;m using the <a href="https://fishshell.com">Fish shell command line</a>, but this should work with zsh, bash.</p>
+<p>My computer is running macOS Big Sur 11.4</p>
+<h1 id="normal-mode-and-insert-mode">Normal Mode and Insert Mode</h1>
+<p>Since Vim is an editor that opens up within your bash terminal, you might be wondering how viewing a file versus editing one work. Well, Vim has various modes that let you switch between viewing a file and editing one.</p>
+<p>To demonstrate, create a file in an empty folder (that way it&rsquo;s easy to locate in your terminal), called <em>text.txt</em>.</p>
+<p>You can create this file the old fashion way, if you&rsquo;d like, by right-clicking and select &ldquo;New File&rdquo;, or using the touch command on your terminal. There is a way to create any file and automatically open it with Vim from the command line, but I will go over that in another tutorial.</p>
+<p>Now, you&rsquo;ll want to open up your command line, or terminal, and change into this folder you created. I&rsquo;ve named mine Vim, and it&rsquo;s on my desktop.</p>
+<p>Within the Vim directory you&rsquo;ll see the newly created <em>text.txt</em> file, which is an empty text file.</p>
+<p>Alright, we&rsquo;re going to open this text file using Vim. To do so, type the following command.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+vim text.txt
+
+</code></pre></div><p>You&rsquo;ll be dropped into the Vim text editor within seconds.</p>
+<p>You&rsquo;ve done it. You&rsquo;ve begun using Vim!</p>
+<p>Since this file is empty, you won&rsquo;t see anything, but most of the time you&rsquo;ll be working with files that have content. We&rsquo;ll be adding our content here, but only do so much as to get you comfortable with using Vim.</p>
+<p>Now, when Vim opens up a file, it opens it in View mode. In View mode, you can navigate a file, use regex to find certain words, and many other things.</p>
+<p>Since we don&rsquo;t have much in this file, we&rsquo;re going to add content so we can learn some basic navigation skills with Vim.</p>
+<p>Let&rsquo;s get out of view mode and go into <em>insert</em> mode.</p>
+<p>In insert mode you can delete words, add words, and more.</p>
+<p>We&rsquo;re going to add some words to this document. To do this, press the letter &ldquo;i&rdquo; on your keyboard.</p>
+<p>If you notice on the bottom left, the word &ldquo;insert&rdquo; appears in all caps. This means you&rsquo;re in insert mode.</p>
+<p>Go ahead and type something.</p>
+<p>I wrote the following in my text file:</p>
+<pre><code>Hola, mi nombre es Douglas
+y a mi me gustan las pupusas.
+
+</code></pre><h1 id="saving-a-file-with-w">Saving a file with :w</h1>
+<p>Now we want to save this file. Let&rsquo;s exit insert mode and go back into view mode where we can save the file. To do this press the <strong>escape key</strong> on the top left of your keyboard, or <strong>ctrl + c</strong> if you don&rsquo;t have an escape key.</p>
+<p>The bottom left of your screen shouldn&rsquo;t say insert anymore. It should be empty. This is how you know you&rsquo;re in View mode.</p>
+<p>Now we can save the file. Type the following command and then press enter:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+:w
+
+</code></pre></div><p>This command saves the file (or &lsquo;writes&rsquo; it). There are similar commands that will close out a file after you&rsquo;ve saved it (:wq) but for our purposes this command is enough.</p>
+<p>Now would be a good time to navigate your file. Since we&rsquo;re in View mode we can easily do this by pressing the h key, which moves you to your left.</p>
+<p>If you have two lines of text, as I do, you can move up with the j key. Move back down with the k key, and then move right with the l key. Try it out.</p>
+<p>You can point and click to get to where you want, but the point of Vim is to avoid the mouse and use what&rsquo;s directly available at your fingertips. There&rsquo;s a great website that helps you get used to moving around with Vim called <a href="https://vim-adventures.com">Vim Adventure</a>.</p>
+<h1 id="quitting-vim-with-q">Quitting Vim with :q</h1>
+<p>We&rsquo;ve done enough with this file and we want to exit the file and the Vim editor.</p>
+<p>To do so, we must remain in View mode and enter a command similar to saving this file.</p>
+<p>Go ahead and type the following command and press enter:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+:q
+
+</code></pre></div><p>Congratulations, you&rsquo;ve exited Vim!</p>
+<p>If you haven&rsquo;t seen the funny memes about trying to exit Vim you can do so now with the assurance that you know how to exit Vim.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Getting to know Vim and being comfortable with it takes time so, start small.</p>
+<p>I&rsquo;ve used it while learning Hugo, the static website generator, editing the configuration files and markdown files.</p>
+<p>I haven&rsquo;t used it for large projects yet because I want the basics to feel natural, but my knowledge is compounding because I need more from it.</p>
+<p>I hope this tutorial inspires you to check it out and know a little bit about it.</p>
+<h1 id="recommendations">Recommendations</h1>
+<p>If you want more, check out the book <a href="https://www.amazon.com/Mastering-Vim-Quickly-WTF-time/dp/1983325740/ref=sr_1_4?dchild=1&amp;keywords=mastering+vim&amp;qid=1622393118&amp;sr=8-4">Mastering Vim Quickly</a>.</p>
+<p>I also recommend the website <a href="https://www.amazon.com/Mastering-Vim-Quickly-WTF-time/dp/1983325740/ref=sr_1_4?dchild=1&amp;keywords=mastering+vim&amp;qid=1622393118&amp;sr=8-4">Vim Adventures</a>.</p>
+<p>I enjoy reading the wiki page of anything existence, and you can find <a href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim&rsquo;s wiki page here</a>.</p>
+<p>Lastly, check out their <a href="https://www.vim.org">website to see what they&rsquo;re all about and the cool charity work they do</a>.</p>
+
+  </div>
+
+  
+<div>
+  <ul class="tags">
+  <li>
+    <a href="https://itisDouglas.github.io/tags/vim/" class="tag-link">Vim</a>
+  </li>
+  
+  <li>
+    <a href="https://itisDouglas.github.io/tags/beginner/" class="tag-link">beginner</a>
+  </li>
+  
+  <li>
+    <a href="https://itisDouglas.github.io/tags/code/" class="tag-link">code</a>
+  </li>
+  
+  <li>
+    <a href="https://itisDouglas.github.io/tags/terminal/" class="tag-link">terminal</a>
+  </li>
+  </ul>
+</div>
+
+
+
+  <div class="share-buttons">
+  <a class="twitter-share-button"
+     href="#"
+     title="Share on Twitter"
+     data-url="https://itisDouglas.github.io/post/starting-out-with-vim/"
+     data-text="Starting out with Vim"><i class="fab fa-twitter"></i></a>
+
+  <a class="linkedin-share-button"
+     href="#"
+     title="Share on LinkedIn"
+     data-url="https://itisDouglas.github.io/post/starting-out-with-vim/"
+     data-text="Starting out with Vim"><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="facebook-share-button"
+     href="#"
+     title="Share on Facebook"
+     data-url="https://itisDouglas.github.io/post/starting-out-with-vim/"
+     data-text="Starting out with Vim"><i class="fab fa-facebook"></i></a>
+
+  <a class="telegram-share-button"
+     href="#"
+     title="Share on Telegram"
+     data-url="https://itisDouglas.github.io/post/starting-out-with-vim/"
+     data-text="Starting out with Vim"><i class="fab fa-telegram"></i></a>
+
+  <a class="pinterest-share-button"
+     href="#"
+     title="Share on Pinterest"
+     data-url="https://itisDouglas.github.io/post/starting-out-with-vim/"
+     data-text="Starting out with Vim"><i class="fab fa-pinterest"></i></a>
+</div>
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Douglas Cueva Jr 2021
+
+      &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  <script src="/js/blog.js"></script>
+
+  
+</body>
+</html>

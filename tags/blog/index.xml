@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Douglas Cueva Jr</title>
+    <link>https://itisDouglas.github.io/tags/blog/</link>
+    <description>Recent content in blog on Douglas Cueva Jr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 26 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://itisDouglas.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Another Blog Post</title>
+      <link>https://itisDouglas.github.io/post/another_post/</link>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://itisDouglas.github.io/post/another_post/</guid>
+      <description>Alright, this is another blog post. I&amp;rsquo;m currently at work, in a meeting, listening to updates on our business prospects.</description>
+    </item>
+    
+    <item>
+      <title>Sample Post</title>
+      <link>https://itisDouglas.github.io/post/sample-post/</link>
+      <pubDate>Wed, 26 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://itisDouglas.github.io/post/sample-post/</guid>
+      <description>This is a sample blog post that will be posted on this blog as a blog post.</description>
+    </item>
+    
+  </channel>
+</rss>
