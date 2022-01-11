@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text editor on Douglas Cueva Jr</title>
+    <link>https://itisDouglas.github.io/tags/text-editor/</link>
+    <description>Recent content in text editor on Douglas Cueva Jr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://itisDouglas.github.io/tags/text-editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Starting out with Vim</title>
+      <link>https://itisDouglas.github.io/post/starting-out-with-vim/</link>
+      <pubDate>Fri, 28 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://itisDouglas.github.io/post/starting-out-with-vim/</guid>
+      <description>Vim Probably one of the most notorious text editors is Vim.</description>
+    </item>
+    
+  </channel>
+</rss>

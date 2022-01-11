@@ -1,3 +1,4 @@
+baseurl = "https://itisDouglas.github.io/"
 title = "Douglas Cueva Jr"
 languageCode = "en"
 enableInlineShortcodes = true
@@ -8,7 +9,7 @@ enableEmoji = true
 
 [params]
 author = "Douglas Cueva Jr"
-description = "My Personal Tech Blog"
+description = "My Personal Blog About Software Development and Comics"
 
 ## Set one of:
 # gravatar = "soho@example.com"
@@ -46,8 +47,8 @@ customJs = ["js/blog.js"]
   [[menu.main]]
   name = "Posts"
   weight = 100
-  identifier = "posts"
-  url = "/posts/"
+  identifier = "post"
+  url = "/post/"
 
   [[menu.main]]
   name = "About"

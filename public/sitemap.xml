@@ -2,12 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/categories/</loc>
+    <loc>https://itisDouglas.github.io/tags/beginner/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/series/</loc>
+    <loc>https://itisDouglas.github.io/tags/code/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>https://itisDouglas.github.io/tags/command-line/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://itisDouglas.github.io/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/post/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/post/starting-out-with-vim/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/tags/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/tags/terminal/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/tags/text-editor/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/tags/vim/</loc>
+    <lastmod>2021-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/about/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/contact/</loc>
+    <lastmod>2021-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://itisDouglas.github.io/categories/</loc>
+  </url><url>
+    <loc>https://itisDouglas.github.io/series/</loc>
   </url>
 </urlset>
